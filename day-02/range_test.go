@@ -23,7 +23,7 @@ func TestSequencesRepeatedOnce(t *testing.T) {
 	for _, test := range tests {
 		got := test.r._2Sequences()
 		if !reflect.DeepEqual(got, test.want) {
-			t.Errorf("SequencesRepeatedTwice(%v) = %v, want %v", test.r, got, test.want)
+			t.Errorf("SequencesRepeatedOnce(%v) = %v, want %v", test.r, got, test.want)
 		}
 	}
 }
